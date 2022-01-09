@@ -130,7 +130,7 @@ async def boom(_, CallbackQuery):
 🎥**Channel Name:** {channel}
 🔗**Video Link:** [Link]({yturl})
 
-⚡️ __Youtube Inline Download Powered By {MUSIC_BOT_NAME}__"""
+🔰  Powered by Wᴀɪғᴜ™ Nᴇᴛᴡᴏʀᴋ"""
     filext = "%(title)s.%(ext)s"
     userdir = os.path.join(os.getcwd(), "downloads", str(user_id))
     if not os.path.isdir(userdir):
