@@ -25,7 +25,7 @@ def AdminRightsCheck(mystic):
                     _check = await get_authuser_names(message.chat.id)
                     if token not in _check:
                         return await message.reply(
-                            "You don't have the required permission to perform this action.\n\n__REQUIRES ADMIN WITH MANAGE VC RIGHTS__"
+                            "You don't have the required permission to perform this action baaka.\n\n__REQUIRES ADMIN WITH MANAGE VC RIGHTS__"
                         )
         return await mystic(_, message)
 
@@ -43,7 +43,7 @@ def AdminActual(mystic):
         )
         if not member.can_manage_voice_chats:
             return await message.reply(
-                "You don't have the required permission to perform this action.\n\n__REQUIRES ADMIN WITH MANAGE VC RIGHTS__"
+                "You don't have the required permission to perform this action baaka.\n\n__REQUIRES ADMIN WITH MANAGE VC RIGHTS__"
             )
         return await mystic(_, message)
 
@@ -65,7 +65,7 @@ def AdminRightsCheckCB(mystic):
                     )
                     if token not in _check:
                         return await CallbackQuery.answer(
-                            "You don't have the required permission to perform this action.\nPermission: MANAGE VOICE CHATS",
+                            "You don't have the required permission to perform this action baaka.\nPermission: MANAGE VOICE CHATS",
                             show_alert=True,
                         )
         return await mystic(_, CallbackQuery)
@@ -80,7 +80,7 @@ def ActualAdminCB(mystic):
         )
         if not a.can_manage_voice_chats:
             return await CallbackQuery.answer(
-                "You don't have the required permission to perform this action.\nPermission: MANAGE VOICE CHATS",
+                "You don't have the required permission to perform this action baaka.\nPermission: MANAGE VOICE CHATS",
                 show_alert=True,
             )
         return await mystic(_, CallbackQuery)
