@@ -82,7 +82,7 @@ async def lyricssex(_, CallbackQuery):
 async def lrsearch(_, message: Message):
     if len(message.command) < 2:
         return await message.reply_text("**Usage:**\n\n/lyrics [ Music Name]")
-    m = await message.reply_text("Searching Lyrics")
+    m = await message.reply_text("🤍Looking For Lyrics")
     query = message.text.split(None, 1)[1]
     x = "OXaVabSRKQLqwpiYOn-E4Y7k3wj-TNdL5RfDPXlnXhCErbcqVvdCF-WnMR5TBctI"
     y = lyricsgenius.Genius(x)
@@ -91,7 +91,8 @@ async def lrsearch(_, message: Message):
     if S is None:
         return await m.edit("Lyrics not found :p")
     xxx = f"""
-**Lyrics Search Powered By {MUSIC_BOT_NAME}**
+**Lyrics Search Powered by Wᴀɪғᴜ™ Nᴇᴛᴡᴏʀᴋ**
+**Lyrics Provided By Yukino Yukinoshita**
 
 **Searched Song:-** __{query}__
 **Found Lyrics For:-** __{S.title}__
