@@ -50,11 +50,11 @@ async def initiate_bot():
         except Exception as e:
             pass
         status.update(
-            status="[bold blue]Scanning for Plugins", spinner="earth"
+            status="[bold blue]Scanning for Plugins ♻️ ", spinner="earth"
         )
         console.print("Found {} Plugins".format(len(ALL_MODULES)) + "\n")
         status.update(
-            status="[bold red]Importing Plugins...",
+            status="[bold red]✅Importing Plugins...",
             spinner="bouncingBall",
             spinner_style="yellow",
         )
@@ -82,7 +82,7 @@ async def initiate_bot():
             status="[bold blue]Importation Completed!",
         )
     console.print(
-        "[bold green]Congrats!! Yukki Music Bot has started successfully!\n"
+        "[bold green]Congrats!! Yukino Music mode has started successfully!\n"
     )
     try:
         await app.send_message(
@@ -229,11 +229,7 @@ async def initiate_bot():
     console.print(f"\n[red]Stopping Bot")
 
 
-home_text_pm = f"""Hello ,
-My name is {BOT_NAME}.
-A Telegram Music+Video Streaming bot with some useful features.
-
-All commands can be used with: / """
+home_text_pm = f""""""
 
 
 @app.on_message(filters.command("help") & filters.private)
@@ -323,7 +319,8 @@ async def start_command(_, message):
 📎**Channel Link:** [Visit From Here]({channellink})
 🔗**Video Link:** [Link]({link})
 
-⚡️ __Searched Powered By {BOT_NAME}__"""
+🔰  Powered by Wᴀɪғᴜ™ Nᴇᴛᴡᴏʀᴋ
+"""
             key = InlineKeyboardMarkup(
                 [
                     [
