@@ -232,13 +232,13 @@ async def initiate_bot():
 home_text_pm = f""""""
 
 
-@app.on_message(filters.command("help") & filters.private)
+@app.on_message(filters.command("mhelp") & filters.private)
 async def help_command(_, message):
     text, keyboard = await help_parser(message.from_user.mention)
     await app.send_message(message.chat.id, text, reply_markup=keyboard)
 
 
-@app.on_message(filters.command("start") & filters.private)
+@app.on_message(filters.command("goddamnshit") & filters.private)
 async def start_command(_, message):
     if len(message.text.split()) > 1:
         name = (message.text.split(None, 1)[1]).lower()
