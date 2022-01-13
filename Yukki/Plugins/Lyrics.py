@@ -91,7 +91,7 @@ async def lrsearch(_, message: Message):
     if S is None:
         return await m.edit("Lyrics not found :p")
     xxx = f"""
-**Lyrics Search Powered By {MUSIC_BOT_NAME}**
+**Lyrics Search Powered by Wᴀɪғᴜ™ Nᴇᴛᴡᴏʀᴋ**
 
 **Searched Song:-** __{query}__
 **Found Lyrics For:-** __{S.title}__
